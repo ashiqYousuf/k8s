@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
     // Sending hostname of the server sending response
     const helloMessage = `Hello from the ${os.hostname()}`
     console.log(helloMessage)
-    res.send(helloMessage)
+    res.send(`<h1>Version: 2.0 ${helloMessage}</h1>`)
 })
 
 app.listen(PORT, () => {
